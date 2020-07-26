@@ -263,6 +263,7 @@ h1 a{
 
 /*--- 共同區塊 end ---*/
 
+/*--- index start ---*/
 /* content區塊 start */
 .content{
     padding: 50px 0;
@@ -284,7 +285,7 @@ h1 a{
     content: "";
     display: block;
     width: 461px;
-    height: 3px;
+    border: 1px solid #979797;
     background-color: #979797;
     margin: 0 auto;
 }
@@ -524,10 +525,16 @@ form{
     border-radius: 3px;
     outline: none;
     float: right;
+    transition: all 0.3s;
 }
 
 .btn:hover{
     cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btn:active{
+    transform: scale(0.95);
 }
 
 .orange{
@@ -555,3 +562,232 @@ form{
     }
 }
 /* registeration區塊 end */
+/*--- index end ---*/
+
+/*--- cart start ---*/
+.cart{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 42px;
+}
+
+@media (max-width: 767px){
+    .cart{
+        display: block;
+        padding: 50px 10px;
+    }
+}
+
+.sidebar h2{
+    font-size: 20px;
+    height: 32px;
+    text-indent: 41px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    background: url(../IMG/leaf.png) no-repeat;
+    background-size: contain;
+}
+
+.sidemenu li a{
+    display: block;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 8px;
+    width: 220px;
+    border-bottom: 1px solid #3D1101;
+}
+
+.sidemenu li a:hover{
+    color: #FFF;
+    background-color: #3D1101;
+}
+
+@media (max-width: 767px){
+    .sidemenu{
+        margin-bottom: 23px;
+    }
+    .sidemenu li a{
+        width: 100%;
+    }
+}
+
+.mainarea{
+    width: 80%;
+}
+
+.topbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search{
+    width: 66%;
+    position: relative;
+}
+
+.search-bar{
+    width: 100%;
+    height: 32px;
+    padding: 0 8px;
+    border: 2px solid #3D1101;
+}
+
+.fa-search{
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    background-color: #3D1101;
+    color: #fff;
+    right: 0;
+    z-index: 3;
+}
+
+.fa-search:hover{
+    cursor: pointer;
+}
+
+.pay{
+    display:flex;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+.pay li a{
+    display: block;
+    text-decoration: none;
+    padding: 0 16px;
+}
+
+@media (max-width: 767px){
+    .mainarea{
+        width: 100%;
+    }
+    .topbox{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .search{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.foodlist{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foodlist li{
+    width: 220px;
+    text-align: center;
+    margin-bottom: 30px;
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    transition: all 0.3s;
+}
+
+.foodlist li:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.foodimg{
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.classic{
+    background: url(../IMG/product_1.png) no-repeat center;
+}
+
+.sausage{
+    background: url(../IMG/product_2.png) no-repeat center;
+}
+
+.ham{
+    background: url(../IMG/product_3.png) no-repeat center;
+}
+
+.wish{
+    background: url(../IMG/product_4.png) no-repeat center;
+}
+
+@media (max-width: 767px){
+    .foodlist li{
+        width: 100%;
+    }
+    .foodimg{
+        background-size: cover;
+    }
+}
+
+.hot{
+    width: 100px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #FFF;
+    background-color: #00CC99;
+    transform: rotate(-315deg);
+    position: absolute;
+    top: 18px;
+    right: -25px;
+}
+
+.foodimg i{
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    color: #FFF;
+}
+
+.foodtxt{
+    padding: 10px;
+}
+
+.foodtxt h3{
+    font-size: 20px;
+}
+
+.foodtxt h3 span{
+    font-size: 12px;
+}
+
+.foodtxt h3:after{
+    width: 91px;
+    content: "";
+    display: block;
+    margin: 8px auto 20px;
+    background-color: #3D1101;
+    border: 1px solid #3D1101;
+}
+
+.foodtxt p{
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.foodtxt button{
+    color: #FF5E45;
+    padding: 4px 49px;
+    border: 2px solid #FF5E45;
+    border-radius: 3px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.foodtxt i{
+    margin-right: 9px;
+}
+
+.foodtxt button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.foodtxt button:active{
+    transform: scale(0.95);
+}
+
+/*--- cart end ---*/
