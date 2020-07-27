@@ -551,6 +551,9 @@ form{
     .registeration{
         padding: 50px 0;
     }
+    .btn{
+        height: 44px;
+    }
 }
 
 @media (max-width: 767px){
