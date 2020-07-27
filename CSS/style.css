@@ -509,6 +509,12 @@ form{
     border-radius: 3px;
 }
 
+@media (max-width: 768px){
+    .inputstyle{
+        height: 44px;
+    }
+}
+
 .space{
     display: inline-block;
     margin-right: 36px;
@@ -577,7 +583,7 @@ form{
         padding: 50px 10px;
     }
 }
-
+/* sidebar start */
 .sidebar h2{
     font-size: 20px;
     height: 32px;
@@ -601,7 +607,7 @@ form{
     color: #FFF;
     background-color: #3D1101;
 }
-
+/* sidebar end */
 @media (max-width: 767px){
     .sidemenu{
         margin-bottom: 23px;
@@ -614,7 +620,7 @@ form{
 .mainarea{
     width: 80%;
 }
-
+/* topbox start */
 .topbox{
     display: flex;
     justify-content: space-between;
@@ -657,7 +663,7 @@ form{
     text-decoration: none;
     padding: 0 16px;
 }
-
+/* topbox end */
 @media (max-width: 767px){
     .mainarea{
         width: 100%;
@@ -691,7 +697,7 @@ form{
     cursor: pointer;
     transform: scale(1.05);
 }
-
+/* foodimg start */
 .foodimg{
     height: 120px;
     position: relative;
@@ -741,7 +747,7 @@ form{
     top: 9px;
     color: #FFF;
 }
-
+/* foodimg end */
 .foodtxt{
     padding: 10px;
 }
@@ -791,3 +797,170 @@ form{
 }
 
 /*--- cart end ---*/
+
+/*--- login start ---*/
+.mainbox{
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.mainbox p{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.maincontainer{
+    padding: 15px;
+    margin: 0 auto;
+    border-top: 3px solid #FF5E45;
+    background-color: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+}
+
+.loginarea{
+    width: 300px;
+}
+
+.maincontainer h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.maincontainer p{
+    font-size: 16px;
+    margin: 0;
+}
+
+.maincontainer a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: left;
+    color: #FF5E45;
+}
+
+.maincontainer label{
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.maincontainer input{
+    width: 100%;
+    height: 32px;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    text-indent: 34px;
+}
+
+@media (max-width: 768px){
+    .maincontainer input{
+        height: 44px;
+    }
+}
+
+.inputbox{
+    position: relative;
+}
+
+.inputbox i{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: rgba(61,17,0,0.50);
+}
+
+.inputspace{
+    margin-bottom: 15px;
+}
+
+/* button start */
+.btnarea{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnarea .btn{
+    width: 48%;
+    margin: 0;
+    float: none;
+    border: none;
+    text-indent: 0;
+}
+
+@media (max-width: 768px){
+    .btnarea .btn{
+        padding: 7px 0;
+    }
+}
+/* button end */
+/*--- login end ---*/
+
+/*--- register start ---*/
+.registerarea{
+    width: 620px;
+}
+
+.contentbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentbox li{
+    width: 48%;
+}
+
+.txtrule{
+    text-align: left;
+}
+
+.txtrule p{
+    line-height: 1.1; 
+}
+
+.txtrule span{
+    font-size: 12px;
+}
+
+.check{
+    margin-top: 12px;
+}
+
+.user .btn{
+    width: 48%;
+    margin: 30px 0 0;
+    float: right;
+    border: none;
+    padding: 1px 0;
+    text-indent: 0;
+}
+
+@media (max-width: 768px){
+    .user .btn{
+        width: 100%;
+        float: none;
+        padding: 7px 0;
+    }
+}
+
+@media (max-width: 767px){
+    .registerarea{
+        width: 300px;
+    }
+    .contentbox{
+        display: block;
+    }
+    .contentbox li{
+        width: 100%;
+    }
+    .txtrule{
+        margin-bottom: 30px;
+    }
+}
+
+
+/*--- register end ---*/
