@@ -624,6 +624,8 @@ form{
 .topbox{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
 }
 
 .search{
@@ -641,7 +643,7 @@ form{
 .fa-search{
     position: absolute;
     text-align: center;
-    padding: 8px;
+    padding: 6px;
     background-color: #3D1101;
     color: #fff;
     right: 0;
@@ -652,10 +654,18 @@ form{
     cursor: pointer;
 }
 
+@media (max-width: 768px){
+    .search-bar{
+        height: 44px;
+    }
+    .fa-search{
+        padding: 13px;
+    }
+}
+
 .pay{
     display:flex;
     align-items: center;
-    margin-bottom: 26px;
 }
 
 .pay li a{
@@ -961,6 +971,4 @@ form{
         margin-bottom: 30px;
     }
 }
-
-
 /*--- register end ---*/
