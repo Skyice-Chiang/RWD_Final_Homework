@@ -59,18 +59,18 @@ body{
     background-color: #efe9e7;
 }
 
-p,a{
+.font-s{
     font-size: 16px;
     line-height: 1.5;
     color: #3D1101;
 }
 
-h2{
+.font-l{
     font-size: 24px;
     color: #3D1101;
 }
 
-h3{
+.font-m{
     font-size: 18px;
     color: #3D1101;
 }
@@ -178,11 +178,23 @@ h1 a{
 }
 
 .title{
+    width: 460px;
     display: table;
     text-align: center;
     padding: 20px 22px 26px 22px;
-    margin: 67px auto 0 auto;
+    /* margin: 67px auto 0 auto; */
     background: rgba(0,0,0,0.35);
+    position: absolute;
+    top: 123px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+@media (max-width: 767px){
+    .title{
+        width: 300px;
+        padding: 20px 6px 26px 6px;
+    }
 }
 
 .title h2{
@@ -207,7 +219,7 @@ h1 a{
     display: flex;
 }
 
-.txtarea>li{
+.txtstyle{
     width: 33.33333%;
     padding: 0 10px;
 }
@@ -251,11 +263,11 @@ h1 a{
     .txtarea{
         display: block;
     }
-    .txtarea>li{
+    .txtstyle{
         width: 100%;
         margin-bottom: 30px;
     }
-    .txtarea li:last-child{
+    .social{
         margin-bottom: 0;
     }
 }
@@ -375,6 +387,10 @@ h1 a{
     font-size: 16px;
 }
 
+.txtbox p{
+    line-height: 1.5;
+}
+
 @media (max-width: 768px){
     .todatchef{
         padding: 0 10px;
@@ -468,6 +484,7 @@ h1 a{
 
 .registeration h2{
     text-align: center;
+    line-height: 1.5;
     margin-bottom: 38px;
 }
 
@@ -484,9 +501,10 @@ h1 a{
     background: url(../IMG/Map.png) no-repeat left;
 }
 
-form{
+.reg_content form{
     width: 48%;
     padding: 0 1%;
+    line-height: 1.5;
 }
 
 .inputstyle,.labelstyle{
@@ -565,7 +583,7 @@ form{
         width: 100%;
         margin: 0;
     }
-    form{
+    .reg_content form{
         width: 100%;
         padding: 0;
     }
@@ -599,6 +617,9 @@ form{
 
 .sidemenu li a{
     display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3D1101;
     text-decoration: none;
     margin-right: 20px;
     padding: 8px;
@@ -649,6 +670,7 @@ form{
     padding: 6px;
     background-color: #3D1101;
     color: #fff;
+    top: 2px;
     right: 0;
     z-index: 3;
 }
@@ -671,8 +693,11 @@ form{
     align-items: center;
 }
 
-.pay li a{
+.pay .paytxt a{
     display: block;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3D1101;
     text-decoration: none;
     padding: 0 16px;
 }
@@ -763,6 +788,7 @@ form{
 /* foodimg end */
 .foodtxt{
     padding: 10px;
+    color: #3D1101;
 }
 
 .foodtxt h3{
@@ -820,7 +846,10 @@ form{
 
 .mainbox p{
     font-size: 20px;
+    font-weight: bold;
     margin-bottom: 35px;
+    line-height: 1.5;
+    color: #3D1101;
 }
 
 .maincontainer{
@@ -923,7 +952,7 @@ form{
     justify-content: space-between;
 }
 
-.contentbox li{
+.contentstyle{
     width: 48%;
 }
 
@@ -967,7 +996,7 @@ form{
     .contentbox{
         display: block;
     }
-    .contentbox li{
+    .contentstyle{
         width: 100%;
     }
     .txtrule{
