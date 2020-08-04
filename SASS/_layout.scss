@@ -1,0 +1,217 @@
+/* layout start */
+body {
+    font-family: $font-type;
+}
+
+.wrap {
+    max-width       : 1024px;
+    margin          : 0 auto;
+    background-color: $bg-color;
+}
+
+//header區塊
+.header {
+    height    : 420px;
+    background: url(../IMG/header_desktop.png);
+}
+
+@include othersize {
+    .header {
+        background: url(../IMG/header_mobile.png) no-repeat center;
+    }
+}
+
+.toparea {
+    background-color: rgba(0, 0, 0, 0.75);
+    @include flex;
+    padding : 0 33px 0 42px;
+    position: relative;
+
+    h1 {
+        a {
+            width     : 120px;
+            height    : 24px;
+            background: url(../IMG/logo_w@svg.svg) no-repeat center;
+            display   : block;
+            @include hide-text;
+        }
+    }
+
+}
+
+.menu {
+    display: flex;
+
+    a {
+        display        : block;
+        font-size      : $font-s;
+        color          : $white-color;
+        text-decoration: none;
+        padding        : 18px 15px;
+        transition     : all 0.3s;
+    }
+
+    a:hover {
+        color           : rgba(0, 0, 0, 0.75);
+        background-color: #fff;
+    }
+}
+
+.hammenu {
+    display   : none;
+    font-size : $font-super-l;
+    padding   : 16px;
+    transition: all 0.3s;
+}
+
+.hammenu:active {
+    transform: scale(0.9);
+}
+
+@include othersize {
+    .toparea {
+        padding: 0 0 0 16px;
+    }
+
+    .menu {
+        width           : 100%;
+        display         : block;
+        position        : absolute;
+        top             : 57px;
+        left            : 0;
+        right           : 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        z-index         : 2;
+        //隱藏選單
+        max-height      : 0;
+        overflow        : hidden;
+        transition      : all 1s;
+
+        a {
+            text-align   : center;
+            border-bottom: 1px dashed rgba(200, 200, 200, 0.8);
+        }
+    }
+
+    .hammenu {
+        display: block;
+        color  : $white-color;
+    }
+
+    /* 打開選單 */
+    .open-menu .menu {
+        max-height: 500px;
+    }
+
+}
+
+.title {
+    width           : 460px;
+    color           : $white-color;
+    text-align      : center;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding         : 20px 22px;
+    position        : absolute;
+    top             : 123px;
+    left            : 50%;
+    transform       : translateX(-50%);
+
+    h2 {
+        font-size    : 36px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size  : $font-s;
+        line-height: 1.5;
+    }
+}
+
+@include othersize {
+    .title {
+        width  : 300px;
+        padding: 20px 6px;
+
+        .break {
+            display: block;
+        }
+    }
+}
+
+//footer區
+.footer {
+    padding: 50px 42px;
+}
+
+.txtarea {
+    display        : flex;
+    justify-content: space-between;
+
+    .txtstyle {
+        width: 30%;
+        color: $brown-color;
+
+        h2 {
+            font-size: $font-super-l;
+        }
+
+        p {
+            font-size  : $font-s;
+            line-height: 1.5;
+        }
+    }
+
+    .info {
+        li {
+            width      : 100%;
+            line-height: 1.5;
+            list-style : disc inside;
+        }
+    }
+
+    .social {
+        display       : flex;
+        flex-direction: column;
+        align-items   : flex-end;
+    }
+}
+
+.socialicon {
+    @include flex;
+
+    a {
+        display    : block;
+        padding    : 0 5px;
+        font-size  : 36px;
+        line-height: 1.5;
+
+        .red {
+            color: #DB4437;
+        }
+
+        .lightblue {
+            color: #41ABE1;
+        }
+
+        .blue {
+            color: #3A5795;
+        }
+    }
+}
+
+@include othersize {
+    .txtarea {
+        display: block;
+
+        .txtstyle {
+            width        : 100%;
+            margin-bottom: 30px;
+        }
+
+        .txtstyle:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* layout end */
