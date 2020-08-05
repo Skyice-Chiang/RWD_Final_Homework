@@ -244,61 +244,61 @@
         display    : block;
         line-height: 1.5;
     }
+}
 
-    .inputstyle {
-        width             : 100%;
-        display           : block;
-        line-height       : 32px;
-        background        : #FFFFFF;
-        border            : 1px solid #CCCCCC;
-        box-shadow        : inset 0px 1px 0px 0px #ECECEC;
-        border-radius     : 3px;
-        padding           : 0 14px;
-        margin-bottom     : 12px;
-        outline           : none;
-        -webkit-appearance: none;
+.inputstyle {
+    width             : 100%;
+    display           : block;
+    line-height       : 32px;
+    background        : #FFFFFF;
+    border            : 1px solid #CCCCCC;
+    box-shadow        : inset 0px 1px 0px 0px #ECECEC;
+    border-radius     : 3px;
+    padding           : 0 14px;
+    margin-bottom     : 12px;
+    outline           : none;
+    -webkit-appearance: none;
 
-        ::placeholder {
-            font-size: $font-s;
-            color    : #4A4A4A;
-        }
+    ::placeholder {
+        font-size: $font-s;
+        color    : #4A4A4A;
     }
+}
 
-    p {
-        line-height: 1.5;
-    }
+p {
+    line-height: 1.5;
+}
 
-    .space {
-        margin-right: 36px;
-    }
+.space {
+    margin-right: 36px;
+}
 
-    .btn {
-        color             : $white-color;
-        margin-top        : 30px;
-        background-color  : rgba(0, 0, 0, 0.35);
-        border-radius     : 3px;
-        border            : none;
-        width             : 70px;
-        line-height       : 32px;
-        margin-left       : 11px;
-        outline           : none;
-        -webkit-appearance: none;
-        float             : right;
-        transition        : all 0.3s;
-    }
+.btn {
+    color             : $white-color;
+    margin-top        : 30px;
+    background-color  : rgba(0, 0, 0, 0.35);
+    border-radius     : 3px;
+    border            : none;
+    width             : 70px;
+    line-height       : 32px;
+    margin-left       : 11px;
+    outline           : none;
+    -webkit-appearance: none;
+    float             : right;
+    transition        : all 0.3s;
+}
 
-    .orange {
-        background-color: #F56C23;
-    }
+.orange {
+    background-color: #F56C23;
+}
 
-    .btn:hover {
-        cursor   : pointer;
-        transform: scale(1.1);
-    }
+.btn:hover {
+    cursor   : pointer;
+    transform: scale(1.1);
+}
 
-    .btn:active {
-        transform: scale(0.8);
-    }
+.btn:active {
+    transform: scale(0.8);
 }
 
 @include othersize {
@@ -316,11 +316,11 @@
         .formarea {
             width : 100%;
             margin: 30px 0 0 0;
-            .inputstyle,
-            .btn {
-                line-height: 44px;
-            }
         }
+    }
+    .inputstyle,
+    .btn {
+        line-height: 44px;
     }
 }
 

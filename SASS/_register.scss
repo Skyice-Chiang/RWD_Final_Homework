@@ -1,0 +1,66 @@
+/* register  start */
+.registerarea {
+    width: 620px;
+}
+
+.contentbox {
+    display        : flex;
+    justify-content: space-between;
+
+    .contentstyle {
+        width: 48%;
+    }
+}
+
+.txtrule{
+    text-align: left;
+    p{
+        font-size: $font-m;
+        line-height: 1.1;
+    }
+    span{
+        font-size: 12px;
+    }
+}
+
+.check{
+    margin-top: 12px;
+}
+
+.user{
+    .btn{
+        width: 48%;
+        margin: 30px 0 0;
+        float: right;
+        border: none;
+        padding: 1px 0;
+        text-indent: 0;
+    }
+}
+
+@include pad{
+    .user{
+        .btn{
+            width: 100%;
+            float: none;
+            padding: 2px 0;
+        }
+    }
+}
+
+@include othersize {
+    .registerarea{
+        width: 300px ;
+        .contentstyle {
+            width: 100%;
+        }
+    }
+    .contentbox{
+        width: 100%;
+        flex-direction: column;
+    }
+    .txtrule{
+        margin-bottom: 30px;
+    }
+}
+/* register  end */

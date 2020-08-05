@@ -1,0 +1,95 @@
+/* login  start */
+.mainbox{
+    text-align: center;
+    padding: 50px 0;
+    color: $brown-color;
+    p{
+        font-size: $font-l;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+}
+
+.maincontainer{
+    padding: 15px;
+    margin: 0 auto;
+    border-top: 3px solid #FF5E45;
+    background-color: $bg-color;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    h3{
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: $font-s;
+        margin: 0;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        font-size: $font-super-s;
+        text-align: left;
+        color: #FF5E45;
+    }
+    label{
+        display: block;
+        text-align: left;
+        font-size: $font-s;;
+        margin-bottom: 3px;
+    }
+    input{
+        width: 100%;
+        height: 32px;
+        border: 1px solid #CCCCCC;
+        box-shadow: inset 0px 1px 0px 0px #ECECEC;
+        border-radius: 3px;
+        text-indent: 34px;
+    }
+    .inputbox{
+        position: relative;
+        i{
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translate(0,-50%);
+            color: rgba(61,17,0,0.50);
+        }
+    }
+    .inputspace{
+        margin-bottom: 15px;
+    }
+}
+
+@include pad{
+    .maincontainer{
+        input{
+            height: 44px;
+        }
+    }
+}
+
+.loginarea{
+    width: 300px;
+}
+
+.btnarea{
+    display: flex;
+    justify-content: space-between;
+    .btn{
+        width: 48%;
+        margin: 0;
+        float: none;
+        border: none;
+        text-indent: 0;
+    }
+}
+
+@include pad{
+    .btnarea{
+        .btn{
+            padding: 7px 0;
+        }
+    }
+}
+/* login  end */
+

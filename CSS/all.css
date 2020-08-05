@@ -501,7 +501,7 @@ body {
   line-height: 1.5;
 }
 
-.formarea .inputstyle {
+.inputstyle {
   width: 100%;
   display: block;
   line-height: 32px;
@@ -515,20 +515,20 @@ body {
   -webkit-appearance: none;
 }
 
-.formarea .inputstyle ::placeholder {
+.inputstyle ::placeholder {
   font-size: 16px;
   color: #4A4A4A;
 }
 
-.formarea p {
+p {
   line-height: 1.5;
 }
 
-.formarea .space {
+.space {
   margin-right: 36px;
 }
 
-.formarea .btn {
+.btn {
   color: #FFF;
   margin-top: 30px;
   background-color: rgba(0, 0, 0, 0.35);
@@ -543,16 +543,16 @@ body {
   transition: all 0.3s;
 }
 
-.formarea .orange {
+.orange {
   background-color: #F56C23;
 }
 
-.formarea .btn:hover {
+.btn:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.formarea .btn:active {
+.btn:active {
   transform: scale(0.8);
 }
 
@@ -570,8 +570,8 @@ body {
     width: 100%;
     margin: 30px 0 0 0;
   }
-  .reg_content .formarea .inputstyle,
-  .reg_content .formarea .btn {
+  .inputstyle,
+  .btn {
     line-height: 44px;
   }
 }
@@ -871,4 +871,170 @@ body {
 }
 
 /* cart end */
+/* login  start */
+.mainbox {
+  text-align: center;
+  padding: 50px 0;
+  color: #3D1101;
+}
+
+.mainbox p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.maincontainer {
+  padding: 15px;
+  margin: 0 auto;
+  border-top: 3px solid #FF5E45;
+  background-color: #efe9e7;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+.maincontainer h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.maincontainer p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.maincontainer a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: left;
+  color: #FF5E45;
+}
+
+.maincontainer label {
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.maincontainer input {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #CCCCCC;
+  box-shadow: inset 0px 1px 0px 0px #ECECEC;
+  border-radius: 3px;
+  text-indent: 34px;
+}
+
+.maincontainer .inputbox {
+  position: relative;
+}
+
+.maincontainer .inputbox i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: rgba(61, 17, 0, 0.5);
+}
+
+.maincontainer .inputspace {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .maincontainer input {
+    height: 44px;
+  }
+}
+
+.loginarea {
+  width: 300px;
+}
+
+.btnarea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnarea .btn {
+  width: 48%;
+  margin: 0;
+  float: none;
+  border: none;
+  text-indent: 0;
+}
+
+@media (max-width: 768px) {
+  .btnarea .btn {
+    padding: 7px 0;
+  }
+}
+
+/* login  end */
+/* register  start */
+.registerarea {
+  width: 620px;
+}
+
+.contentbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentbox .contentstyle {
+  width: 48%;
+}
+
+.txtrule {
+  text-align: left;
+}
+
+.txtrule p {
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.txtrule span {
+  font-size: 12px;
+}
+
+.check {
+  margin-top: 12px;
+}
+
+.user .btn {
+  width: 48%;
+  margin: 30px 0 0;
+  float: right;
+  border: none;
+  padding: 1px 0;
+  text-indent: 0;
+}
+
+@media (max-width: 768px) {
+  .user .btn {
+    width: 100%;
+    float: none;
+    padding: 2px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .registerarea {
+    width: 300px;
+  }
+  .registerarea .contentstyle {
+    width: 100%;
+  }
+  .contentbox {
+    width: 100%;
+    flex-direction: column;
+  }
+  .txtrule {
+    margin-bottom: 30px;
+  }
+}
+
+/* register  end */
 /*# sourceMappingURL=all.css.map */
